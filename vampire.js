@@ -21,16 +21,16 @@ class Vampire {
 
   // Returns the number of vampires away from the original vampire this vampire is
   get numberOfVampiresFromOriginal() {
-    console.log('this.creator: ', this.creator);
     if (this.creator === null) {
       return 0;
-    } else {
-      return this.creator.numberOfVampiresFromOriginal + 1;
     }
+
+    return this.creator.numberOfVampiresFromOriginal + 1;
   }
 
   // Returns true if this vampire is more senior than the other vampire. (Who is closer to the original vampire)
   isMoreSeniorThan(vampire) {
+    return vampire.numberOfVampiresFromOriginal > this.numberOfVampiresFromOriginal;
 
   }
 
