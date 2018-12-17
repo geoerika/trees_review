@@ -27,6 +27,16 @@ class Employee {
 
     return employees;
   }
+
+  get totalEmployees() {
+
+    let totalEmployees = 0; // 1
+
+    // Use depth first traversal to calculate the total employees
+
+    return totalEmployees;
+
+  }
 }
 
 const ada = new Employee("Ada", "CEO", 3000000.00);
