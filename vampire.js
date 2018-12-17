@@ -49,7 +49,6 @@ class Vampire {
 
   closestCommonAncestor(vampire) {
 
-
     if (vampire === this) {
       return this;
     }
