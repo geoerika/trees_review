@@ -40,7 +40,7 @@ class Employee {
 
     for (const subordinate of this.subordinates) {
       const totalEmployees1 = subordinate.totalEmployees;
-      totalEmployees = totalEmployees + 1;
+      totalEmployees = totalEmployees1 + totalEmployees;
    }
 
     return totalEmployees;
@@ -64,4 +64,5 @@ craig.addSubordinate(simone);
 
 // console.log(ada.employeesThatMakeOver(418401));
 console.log(craig.totalEmployees);
+console.log(ada.totalEmployees);
 
